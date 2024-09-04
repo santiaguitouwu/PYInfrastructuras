@@ -38,20 +38,15 @@
                             <th>Reservación ID</th>
                             <th>Fecha de Check-in</th>
                             <th>Fecha de Check-out</th>
-                            <th>Compañía</th>
-                            <th>Grupo Sanguíneo</th>
-                            <th>Ubicación Actual</th>
                         </tr>
                     </thead>
                     <tbody id="myTable">
                         {% for Customer in profiles %}
                         <tr>
-                            <td>{{ Customer.job }}</td>  
-					 		<td>{{ Customer.company }}</td>  
-					 		<td>{{ Customer.ssn }}</td>  
-					 		<td>{{ Customer.residence }}</td>  
-					 		<td>{{ Customer.blood_group }}</td>  
-					 		<td>{{ Customer.current_location }}</td> 
+                            <td>{{ Customer.id }}</td>
+                            <td>{{ Customer.checkin_date }}</td>
+                            <td>{{ Customer.checkout_date }}</td>
+                            <td>{{ Customer.company }}</td>
                         </tr>
                         {% endfor %}
                     </tbody>
